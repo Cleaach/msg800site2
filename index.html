@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f1eb">
+  <meta name="description" content="A mobile-friendly transcription of Basic Stochastic Processes lecture notes.">
+  <title>Basic Stochastic Processes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="scrim" id="scrim" aria-label="Close navigation"></button>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">σ</div>
+      <div><div class="brand-title">Stochastic<br>Processes</div><div class="brand-subtitle">lecture notes</div></div>
+    </div>
+    <div class="sidebar-tools">
+      <label class="search-wrap" for="search">
+        <span aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="Search notes…" autocomplete="off">
+        <kbd>/</kbd>
+      </label>
+    </div>
+    <nav id="sectionNav" aria-label="Sections"></nav>
+    <div class="sidebar-foot">Transcribed from handwritten lecture notes<br><span>Scroll, search, and study anywhere.</span></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
+      <div class="crumb">Basic Stochastic Processes <span>/</span> <strong id="currentCrumb">Crash Course</strong></div>
+      <a class="top-link" href="#about">About</a>
+    </header>
+    <section class="hero" id="about">
+      <div class="eyebrow">A compact study companion</div>
+      <h1>Basic <em>Stochastic</em><br>Processes</h1>
+      <p>Clean, searchable, page-by-page transcriptions of the course notes, formatted for quick study on a phone or desktop.</p>
+      <div class="hero-meta"><span><b id="sectionCount">10</b> sections</span><span><b id="pageCount">52</b> pages</span><span>mobile-ready</span></div>
+    </section>
+    <div class="content-head">
+      <div><div class="eyebrow">Course index</div><h2>Choose a section</h2></div>
+      <div class="view-note" id="resultNote"></div>
+    </div>
+    <div class="section-grid" id="sectionGrid"></div>
+    <div id="searchResults" class="search-results" hidden></div>
+    <footer class="footer">Built for quick review · Equations use a math-first serif fallback · <button id="backTop">Back to top ↑</button></footer>
+  </main>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
